@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite name="Failed suite [WebsiteSuite]" guice-stage="DEVELOPMENT">
+  <parameter name="browserName" value="chrome"/>
+  <test thread-count="5" name="AllWebsiteTests(failed)">
     <classes>
-      <class name="testdemo1.GoodReadersSimpleTest">
+      <class name="testdemo1.SmokeTestingWebsite">
         <methods>
-          <include name="signupAndLogin"/>
+          <include name="setup"/>
+          <include name="searchForBook"/>
+          <include name="teardown"/>
+          <include name="loginAfterRegistration"/>
         </methods>
-      </class> <!-- testdemo1.GoodReadersSimpleTest -->
+      </class> <!-- testdemo1.SmokeTestingWebsite -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- AllWebsiteTests(failed) -->
+</suite> <!-- Failed suite [WebsiteSuite] -->

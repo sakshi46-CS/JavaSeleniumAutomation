@@ -3,11 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testdemo1.GoodReadersSimpleTest">
+      <class name="testdemo1.SmokeTestingWebsite">
         <methods>
-          <include name="signupAndLogin"/>
+          <include name="verifyHomePageTitle"/>
+          <include name="registerNewUser"/>
+          <include name="setup"/>
+          <include name="searchForBook"/>
+          <include name="teardown"/>
+          <include name="loginAfterRegistration"/>
         </methods>
-      </class> <!-- testdemo1.GoodReadersSimpleTest -->
+      </class> <!-- testdemo1.SmokeTestingWebsite -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
