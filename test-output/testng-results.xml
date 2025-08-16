@@ -1,47 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-14T16:29:00 IST" name="WebsiteSuite" finished-at="2025-08-14T16:29:15 IST" duration-ms="14998">
+  <suite started-at="2025-08-16T16:55:52 IST" name="WebsiteSuite" finished-at="2025-08-16T16:57:08 IST" duration-ms="76187">
     <groups>
-      <group name="finalTest">
-        <method signature="SmokeTestingWebsite.loginAfterRegistration()[pri:0, instance:testdemo1.SmokeTestingWebsite@3754a4bf]" name="loginAfterRegistration" class="testdemo1.SmokeTestingWebsite"/>
-      </group> <!-- finalTest -->
-      <group name="regression">
-        <method signature="SmokeTestingWebsite.registerNewUser()[pri:0, instance:testdemo1.SmokeTestingWebsite@3754a4bf]" name="registerNewUser" class="testdemo1.SmokeTestingWebsite"/>
-      </group> <!-- regression -->
-      <group name="smoke">
-        <method signature="SmokeTestingWebsite.searchForItem()[pri:0, instance:testdemo1.SmokeTestingWebsite@3754a4bf]" name="searchForItem" class="testdemo1.SmokeTestingWebsite"/>
-        <method signature="SmokeTestingWebsite.verifyHomePageTitle()[pri:0, instance:testdemo1.SmokeTestingWebsite@3754a4bf]" name="verifyHomePageTitle" class="testdemo1.SmokeTestingWebsite"/>
-      </group> <!-- smoke -->
     </groups>
-    <test started-at="2025-08-14T16:29:00 IST" name="AllWebsiteTests" finished-at="2025-08-14T16:29:15 IST" duration-ms="14998">
-      <class name="testdemo1.SmokeTestingWebsite">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testdemo1.SmokeTestingWebsite@3754a4bf]" started-at="2025-08-14T16:29:00 IST" name="setup" finished-at="2025-08-14T16:29:08 IST" duration-ms="8124" status="PASS">
+    <test started-at="2025-08-16T16:55:52 IST" name="AllWebsiteTests" finished-at="2025-08-16T16:57:08 IST" duration-ms="76187">
+      <class name="testdemo1.Searchfunctionalitytest">
+        <test-method signature="searchTest(java.lang.String)[pri:0, instance:testdemo1.Searchfunctionalitytest@368f2016]" started-at="2025-08-16T16:55:52 IST" name="searchTest" data-provider="searchData" finished-at="2025-08-16T16:56:26 IST" duration-ms="34232" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[selenium]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="verifyHomePageTitle()[pri:0, instance:testdemo1.SmokeTestingWebsite@3754a4bf]" started-at="2025-08-14T16:29:08 IST" name="verifyHomePageTitle" finished-at="2025-08-14T16:29:08 IST" duration-ms="20" status="PASS">
+        </test-method> <!-- searchTest -->
+        <test-method signature="searchTest(java.lang.String)[pri:0, instance:testdemo1.Searchfunctionalitytest@368f2016]" started-at="2025-08-16T16:56:26 IST" name="searchTest" data-provider="searchData" finished-at="2025-08-16T16:56:48 IST" duration-ms="22177" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyHomePageTitle -->
-        <test-method signature="searchForItem()[pri:0, instance:testdemo1.SmokeTestingWebsite@3754a4bf]" started-at="2025-08-14T16:29:08 IST" name="searchForItem" finished-at="2025-08-14T16:29:09 IST" duration-ms="1320" status="PASS">
+        </test-method> <!-- searchTest -->
+        <test-method signature="searchTest(java.lang.String)[pri:0, instance:testdemo1.Searchfunctionalitytest@368f2016]" started-at="2025-08-16T16:56:48 IST" name="searchTest" data-provider="searchData" finished-at="2025-08-16T16:57:08 IST" duration-ms="19675" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[automation]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- searchForItem -->
-        <test-method signature="registerNewUser()[pri:0, instance:testdemo1.SmokeTestingWebsite@3754a4bf]" started-at="2025-08-14T16:29:09 IST" name="registerNewUser" finished-at="2025-08-14T16:29:12 IST" duration-ms="2709" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- registerNewUser -->
-        <test-method signature="loginAfterRegistration()[pri:0, instance:testdemo1.SmokeTestingWebsite@3754a4bf]" started-at="2025-08-14T16:29:12 IST" name="loginAfterRegistration" depends-on-groups="regression, smoke" finished-at="2025-08-14T16:29:14 IST" duration-ms="2184" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginAfterRegistration -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testdemo1.SmokeTestingWebsite@3754a4bf]" started-at="2025-08-14T16:29:14 IST" name="teardown" finished-at="2025-08-14T16:29:15 IST" duration-ms="469" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- testdemo1.SmokeTestingWebsite -->
+        </test-method> <!-- searchTest -->
+      </class> <!-- testdemo1.Searchfunctionalitytest -->
     </test> <!-- AllWebsiteTests -->
   </suite> <!-- WebsiteSuite -->
 </testng-results>

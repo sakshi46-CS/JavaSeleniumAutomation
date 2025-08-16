@@ -1,17 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="WebsiteSuite" parallel="false">
+
     <parameter name="browserName" value="chrome"/>
+
     <test name="AllWebsiteTests" thread-count="1">
         <classes>
-            <class name="testdemo1.SmokeTestingWebsite">
+          <!-- <class name="testdemo1.SmokeTestingWebsite">
                 <methods>
                     <include name="verifyHomePageTitle"/>
                     <include name="searchForItem"/>
                     <include name="registerNewUser"/>
                     <include name="loginAfterRegistration"/>
                 </methods>
+            </class>-->
+
+            <!-- Added your Dataprovider class -->
+          <!--   <class name="testdemo1.Dataprovider">
+               
+            </class>-->
+          <!--   <class name="testdemo1.ignoringtestCases">
+            <methods>
+                    <include name="signuppage"/>
+                    <include name="loginpage"/>
+                    <include name="searchProducts"/>
+                   
+                </methods>
+            </class>-->
+            <class name="testdemo1.Searchfunctionalitytest">
+            <methods>
+              <include name="searchTest"/>
+            </methods>
             </class>
         </classes>
     </test>
+
 </suite>
