@@ -1,46 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-16T16:55:52 IST" name="WebsiteSuite" finished-at="2025-08-16T16:57:08 IST" duration-ms="76187">
+  <suite started-at="2025-08-18T17:51:15 IST" name="WebsiteSuite" finished-at="2025-08-18T17:51:29 IST" duration-ms="13258">
     <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Cucumber.TestRunner@70325e14]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-08-16T16:55:52 IST" name="AllWebsiteTests" finished-at="2025-08-16T16:57:08 IST" duration-ms="76187">
-      <class name="testdemo1.Searchfunctionalitytest">
-        <test-method signature="searchTest(java.lang.String)[pri:0, instance:testdemo1.Searchfunctionalitytest@368f2016]" started-at="2025-08-16T16:55:52 IST" name="searchTest" data-provider="searchData" finished-at="2025-08-16T16:56:26 IST" duration-ms="34232" status="PASS">
+    <test started-at="2025-08-18T17:51:15 IST" name="AllWebsiteTests" finished-at="2025-08-18T17:51:29 IST" duration-ms="13258">
+      <class name="Cucumber.TestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:Cucumber.TestRunner@70325e14]" started-at="2025-08-18T17:51:15 IST" name="setUpClass" finished-at="2025-08-18T17:51:16 IST" duration-ms="1009" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[selenium]]>
+                <![CDATA[org.testng.TestRunner@23940f86]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- searchTest -->
-        <test-method signature="searchTest(java.lang.String)[pri:0, instance:testdemo1.Searchfunctionalitytest@368f2016]" started-at="2025-08-16T16:56:26 IST" name="searchTest" data-provider="searchData" finished-at="2025-08-16T16:56:48 IST" duration-ms="22177" status="PASS">
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Cucumber.TestRunner@70325e14]" started-at="2025-08-18T17:51:16 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-18T17:51:29 IST" duration-ms="12070" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[testng]]>
+                <![CDATA["Successful login"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login Feature"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- searchTest -->
-        <test-method signature="searchTest(java.lang.String)[pri:0, instance:testdemo1.Searchfunctionalitytest@368f2016]" started-at="2025-08-16T16:56:48 IST" name="searchTest" data-provider="searchData" finished-at="2025-08-16T16:57:08 IST" duration-ms="19675" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[automation]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:Cucumber.TestRunner@70325e14]" started-at="2025-08-18T17:51:29 IST" name="tearDownClass" finished-at="2025-08-18T17:51:29 IST" duration-ms="103" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- searchTest -->
-      </class> <!-- testdemo1.Searchfunctionalitytest -->
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- Cucumber.TestRunner -->
     </test> <!-- AllWebsiteTests -->
   </suite> <!-- WebsiteSuite -->
 </testng-results>

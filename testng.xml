@@ -27,11 +27,15 @@
                    
                 </methods>
             </class>-->
-            <class name="testdemo1.Searchfunctionalitytest">
+          <!--    <class name="testdemo1.Searchfunctionalitytest">
             <methods>
               <include name="searchTest"/>
             </methods>
+            </class>-->
+            <class name="Cucumber.TestRunner">
+            
             </class>
+            
         </classes>
     </test>
 
