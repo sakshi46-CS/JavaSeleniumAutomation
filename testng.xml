@@ -32,7 +32,7 @@
               <include name="searchTest"/>
             </methods>
             </class>-->
-            <class name="Cucumber.TestRunner">
+            <class name="tests.NopCommerceTest">
             
             </class>
             
