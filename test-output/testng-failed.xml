@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.NopCommerceTest">
+      <class name="testdemo1.listenerpractice">
         <methods>
-          <include name="setup"/>
-          <include name="fullFlowTest"/>
-          <include name="teardown"/>
+          <include name="clickBook"/>
+          <include name="launchbrower"/>
         </methods>
-      </class> <!-- tests.NopCommerceTest -->
+      </class> <!-- testdemo1.listenerpractice -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

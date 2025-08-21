@@ -2,6 +2,10 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="WebsiteSuite" parallel="false">
 
+   <listeners>
+<listener class-name="testdemo1.Extentreportmanager_v"/>
+</listeners>
+
     <parameter name="browserName" value="chrome"/>
 
     <test name="AllWebsiteTests" thread-count="1">
@@ -32,7 +36,7 @@
               <include name="searchTest"/>
             </methods>
             </class>-->
-            <class name="tests.NopCommerceTest">
+            <class name="testdemo1.listenerpractice">
             
             </class>
             

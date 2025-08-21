@@ -1,47 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="3" passed="2" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-19T18:24:49 IST" name="Default suite" finished-at="2025-08-19T18:25:02 IST" duration-ms="12774">
+  <suite started-at="2025-08-20T14:08:08 IST" name="Default suite" finished-at="2025-08-20T14:08:21 IST" duration-ms="12992">
     <groups>
     </groups>
-    <test started-at="2025-08-19T18:24:49 IST" name="Default test" finished-at="2025-08-19T18:25:02 IST" duration-ms="12774">
-      <class name="tests.NopCommerceTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.NopCommerceTest@7817fd62]" started-at="2025-08-19T18:24:50 IST" name="setup" finished-at="2025-08-19T18:24:57 IST" duration-ms="7431" status="PASS">
+    <test started-at="2025-08-20T14:08:08 IST" name="Default test" finished-at="2025-08-20T14:08:21 IST" duration-ms="12992">
+      <class name="testdemo1.listenerpractice">
+        <test-method is-config="true" signature="launchbrower()[pri:0, instance:testdemo1.listenerpractice@1ff4931d]" started-at="2025-08-20T14:08:08 IST" name="launchbrower" finished-at="2025-08-20T14:08:13 IST" duration-ms="5209" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="fullFlowTest()[pri:0, instance:tests.NopCommerceTest@7817fd62]" started-at="2025-08-19T18:24:57 IST" name="fullFlowTest" finished-at="2025-08-19T18:25:02 IST" duration-ms="4567" status="FAIL">
-          <exception class="org.openqa.selenium.UnhandledAlertException">
+        </test-method> <!-- launchbrower -->
+        <test-method signature="logIn()[pri:1, instance:testdemo1.listenerpractice@1ff4931d]" started-at="2025-08-20T14:08:14 IST" name="logIn" finished-at="2025-08-20T14:08:20 IST" duration-ms="6138" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logIn -->
+        <test-method signature="checkTitleName()[pri:2, instance:testdemo1.listenerpractice@1ff4931d]" started-at="2025-08-20T14:08:20 IST" name="checkTitleName" finished-at="2025-08-20T14:08:20 IST" duration-ms="30" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkTitleName -->
+        <test-method signature="clickBook()[pri:3, instance:testdemo1.listenerpractice@1ff4931d]" started-at="2025-08-20T14:08:20 IST" name="clickBook" finished-at="2025-08-20T14:08:21 IST" duration-ms="1484" status="SKIP">
+          <exception class="org.testng.SkipException">
             <message>
-              <![CDATA[unexpected alert open: {Alert text : Please enter some search keyword}
-  (Session info: chrome=139.0.7258.128): Please enter some search keyword
-Build info: version: '4.34.0', revision: '707dcb4246*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [eb904bf9ecc2dcd7b927de3618d260eb, getTitle {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.128, chrome: {chromedriverVersion: 139.0.7258.68 (40ff94600b6e..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51464}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51464/devtoo..., se:cdpVersion: 139.0.7258.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: eb904bf9ecc2dcd7b927de3618d260eb]]>
+              <![CDATA[Skipping this test.]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Please enter some search keyword}
-  (Session info: chrome=139.0.7258.128): Please enter some search keyword
-Build info: version: '4.34.0', revision: '707dcb4246*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [eb904bf9ecc2dcd7b927de3618d260eb, getTitle {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.128, chrome: {chromedriverVersion: 139.0.7258.68 (40ff94600b6e..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51464}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51464/devtoo..., se:cdpVersion: 139.0.7258.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: eb904bf9ecc2dcd7b927de3618d260eb
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:136)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:617)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:621)
-at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:317)
-at tests.NopCommerceTest.fullFlowTest(NopCommerceTest.java:49)
+              <![CDATA[org.testng.SkipException: Skipping this test.
+at testdemo1.listenerpractice.clickBook(listenerpractice.java:46)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -72,15 +57,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.UnhandledAlertException -->
+          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- fullFlowTest -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.NopCommerceTest@7817fd62]" started-at="2025-08-19T18:25:02 IST" name="teardown" finished-at="2025-08-19T18:25:02 IST" duration-ms="439" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- tests.NopCommerceTest -->
+        </test-method> <!-- clickBook -->
+      </class> <!-- testdemo1.listenerpractice -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

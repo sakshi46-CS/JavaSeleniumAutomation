@@ -10,7 +10,10 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.SkipException;
 import org.testng.annotations.BeforeClass;
+
 import org.testng.annotations.Test;
+
+
 
 public class listenerpractice {
   public WebDriver driver;
@@ -32,7 +35,7 @@ public class listenerpractice {
        }
        @Test(priority=2)
        public void checkTitleName() {
-           String expectedName = "Demo Web Shop"; // Intentionally wrong for demo
+           String expectedName = "Demo Web "; // Intentionally wrong for demo
            String actualName = driver.getTitle();
            Assert.assertEquals(actualName, expectedName);
        }

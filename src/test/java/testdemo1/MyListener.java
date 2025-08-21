@@ -35,27 +35,7 @@ public class MyListener implements ITestListener {
     public void onTestFailure(ITestResult result) {
         System.out.println("Test Failed: " + result.getName());
 
-        // Get driver instance from test class
-        Object testClass = result.getInstance();
-        driver = ((listenerpractice) testClass).driver;
-
-        // Create Screenshots folder
-        File destDir = new File("Screenshots");
-        if (!destDir.exists()) destDir.mkdir();
-
-        // Screenshot file name
-        String timeStamp = new SimpleDateFormat("yyyy-MM-dd_HH-mm-ss").format(new Date());
-        String fileName = result.getName() + "_" + timeStamp + ".png";
-
-        // Take screenshot
-        File srcFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-        File destFile = new File(destDir, fileName);
-        try {
-            Files.copy(srcFile.toPath(), destFile.toPath(), StandardCopyOption.REPLACE_EXISTING);
-            System.out.println("Screenshot saved: " + destFile.getPath());
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+       
     }
 
     @Override
